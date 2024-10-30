@@ -1,0 +1,192 @@
+* {
+  overflow: hidden;
+}
+.main-container {
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 0.8rem 0.8rem 0;
+  z-index: 5;
+}
+
+.sidebar .active {
+  background-color: #1801e9;
+  border-radius: 0.5rem;
+}
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-photo img {
+  width: 60px; /* Membesarkan ukuran foto */
+  height: 60px;
+  object-fit: cover;
+}
+.profile-details h6 {
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+.profile-details p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: white;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Posisi teks dan ikon di tengah */
+  justify-content: center;
+  position: relative; /* Agar item tetap di tempat */
+}
+
+.icons-right {
+  position: absolute;
+  top: 0;
+  right: 0; /* Jarak dari sisi kanan */
+  display: flex;
+  flex-direction: column; /* Susun ikon secara vertikal */
+  align-items: center;
+}
+
+.icons-right .icon {
+  font-size: 0.9rem; /* Ukuran ikon */
+  color: #fff;
+  cursor: pointer;
+}
+.text-right {
+  text-align: right;
+}
+.header {
+  position: relative;
+  z-index: 10;
+  padding-left: 213px;
+}
+.header-right {
+  margin-top: 25px;
+}
+.logout-item {
+  font-weight: bold; /* Teks lebih tebal */
+  display: block; /* Pastikan tampil sebagai block element */
+  color: #007bff;
+  border-radius: 8px;
+}
+
+.logout-item:hover {
+  background-color: #fff;
+  color: #fb0019; /* Warna teks saat dihover */
+  border-radius: 8px;
+}
+
+.main-content {
+  margin-left: 210px;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll; /* Mengaktifkan scroll vertikal */
+  flex: 1; /* Membuat konten utama mengisi ruang yang tersedia */
+  padding-bottom: 3rem; /* Padding untuk konten */
+}
+
+.solid-line-width {
+  border: none; /* Hilangkan border default */
+  height: 2px; /* Atur ketebalan garis */
+  background-color: #ffffff; /* Warna garis */
+  width: 100%; /* Lebar garis */
+}
+
+h4 {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  margin-right: 5rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #007bff;
+}
+h5,
+h6 {
+  color: #007bff;
+}
+
+/* Untuk menargetkan seluruh elemen b-nav-item */
+.custom-nav-item {
+  color: white !important; /* Warna teks putih untuk semua item */
+}
+
+/* Target elemen teks secara spesifik */
+.custom-nav-item .nav-link {
+  color: white !important; /* Menargetkan teks di dalam b-nav-item */
+}
+
+/* Gaya untuk ikon agar warnanya juga putih */
+.custom-nav-item i {
+  color: white !important; /* Warna ikon menjadi putih */
+  font-size: 1rem;
+}
+
+/* Dashboard */
+/* Styling untuk memberikan efek 3D pada card */
+
+.custom-card {
+  background-color: #007bff; /* Warna primer Bootstrap (biru) */
+  border-radius: 10px; /*Membuat sudut rounded*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Efek 3D dengan bayangan */
+  margin-bottom: 20px;
+}
+
+/* Styling untuk hover pada kolom tertentu */
+.hover-col {
+  transition: transform 0.5s ease; /* Animasi ketika hover */
+  padding: 5px;
+}
+
+/* Efek zoom saat dihover */
+.hover-col:hover {
+  transform: scale(1); /*Efek zoom dengan scale 1.1 */
+  background-color: #fff;
+  color: #007bff; /*Warna latar belakang sedikit lebih gelap saat hover*/
+  border-radius: 10px;
+}
+
+.dashboard b-card-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+strong {
+  font-size: 18px;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 260px; /* Sesuaikan tinggi container agar chart lebih kecil */
+}
+
+/* Style Stok Bahan */
+.b-table {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+.download {
+  margin: 0;
+}
