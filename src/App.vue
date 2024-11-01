@@ -63,7 +63,6 @@
                   <!-- Menampilkan ikon -->
                   {{ activeMenuTitle.title }}
                 </h3>
-                <!-- Menampilkan title -->
               </div>
             </b-col>
             <!-- Search Bar Form -->
@@ -90,6 +89,10 @@
               <b-nav-item @click="handleLogout" class="logout-item"> <i class="bi bi-box-arrow-right"></i> Logout </b-nav-item>
             </b-col>
           </b-row>
+          <hr class="solid-line" />
+          <b-row>
+            <UserNotes />
+          </b-row>
         </b-col>
       </b-row>
     </b-container>
@@ -106,6 +109,7 @@ import ManagePembayaran from "./components/ManagePembayaran.vue";
 import ManageStaff from "./components/ManageStaff.vue";
 import ManageBranch from "./components/ManageBranch.vue";
 import ExportData from "./components/ExportData.vue";
+import UserNotes from "./components/UserNotes.vue";
 
 export default {
   components: {
@@ -118,6 +122,7 @@ export default {
     ManageStaff,
     ManageBranch,
     ExportData,
+    UserNotes,
   },
   data() {
     return {
